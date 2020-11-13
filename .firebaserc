@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "fireapp-ef658"
+  },
+  "targets": {
+    "fireapp-ef658": {
+      "hosting": {
+        "fireapp": [
+          "fireapp-ef658"
+        ]
+      }
+    }
+  }
+}

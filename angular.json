@@ -117,8 +117,13 @@
               "devServerTarget": "fireapp:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "fireapp"
 }
