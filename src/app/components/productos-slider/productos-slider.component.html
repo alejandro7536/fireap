@@ -1,0 +1,18 @@
+<div class="swiper-container" >
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Card -->
+    <div class="swiper-slide rounded-lg shadow-md w-1/4" *ngFor="let producto of productos" >
+      <div class="block h-full w-full" style="height: 200px;">
+        <img class="object-cover h-48 w-full"
+          [src]="producto.imagen"
+          style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+      </div>
+      <header class="flex items-center justify-between leading-tight p-2">
+        <p class="block font-semibold text-gray-600 text-sm mx-1 my-1  animate__animated animate__fadeInDown">{{producto.nombre}}</p>
+        <p class="block font-semibold text-gray-600 text-sm mx-1 my-1  animate__animated animate__fadeInDown">{{producto.precio | currency}}</p>
+      </header>
+    </div>
+    <!-- Fin card -->
+  </div>
+</div>

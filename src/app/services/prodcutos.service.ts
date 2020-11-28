@@ -14,4 +14,13 @@ export class ProdcutosService {
   getProductos() {
     return this.af.collection('productos').valueChanges();
   }
+
+  getProductosByprecio(operador: '<' | '>' | '==', precio: number) {
+    return this.af.collection('productos', ref => ref.where('precio', operador, precio )).valueChanges();
+
+  }
+
+  getProductosByNombre(nombre: string) {
+    return this.af.collection('productos', ref => ref.where('nombre', '==', nombre )).valueChanges();
+  }
 }
